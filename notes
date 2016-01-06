@@ -1,5 +1,5 @@
-Create a Shirt Model
-  name, url, image_url
+*Create a Shirt Model
+* name, url, image_url
 Create a ShirtsController
   index Action that shows all of the shirts
 Create a shirts/index.html.erb template

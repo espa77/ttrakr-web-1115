@@ -1,7 +1,25 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+puts "Starting"
+Shirt.create(name: "Star Cats", source_url: "http://shirt.woot.com/offers/star-cats?ref=sh_cnt_top20_1_tl", image_url: " https://d3gqasl9vmjfd8.cloudfront.net/bbae8d8f-2404-4b6b-aaa4-e7f4dbbfb25e.png")
+Shirt.create(name: "Not Easy Being Green", source_url: "http://shirt.woot.com/offers/not-easy-being-green?ref=sh_cnt_top20_2_tl", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/c4e875d0-c1ab-4921-b384-1e51c8f7c319.png")
+Shirt.create(name: "shirtie mcshirtson", source_url:"https://shirt.woot.com/offers/star-cats?ref=sh_cnt_top20_1_img", image_url:"")
+Shirt.create(name: "Good Morning", source_url: "http://shirt.woot.com/offers/good-morning?ref=cnt_ctlg_dgn_15", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/55d6da97-e0c0-4f29-a2b6-b9adab937a29.png")
+Shirt.create(name: "Reach for the Stars", source_url: "http://shirt.woot.com/offers/reach-for-the-stars?ref=sh_cnt_top20_13_img", image_url: "https://images-na.ssl-images-amazon.com/images/S/mediaservice.woot.com/93babb9d-721c-4bc2-9df3-20cd4b8573c8._SY441_CR15,0,558,441_.png")
+
+Shirt.create(name: "cool shirt", source_url: "http://sport.woot.com/offers/under-armour-mens-quarter-short-4-colors-1?ref=sp_cnt_gw_dly_wobtn", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/b62e1546-9958-4061-9a38-dbcc4a9de3ff.jpg")
+Shirt.create(name: "Tee Rex", source_url: "http://shirt.woot.com/offers/reach-for-the-stars?ref=sh_cnt_top20_13_img", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/085e0ca6-6196-4090-89d8-172a2c8c7622.png")
+Shirt.create(name: "The Binge", source_url: "http://shirt.woot.com/offers/the-binge", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/cac18189-7f20-4ac4-a74a-087c543961bb.png")
+Shirt.create(name: "Sarcasm", source_url: "http://shirt.woot.com/offers/sarcasm-4?ref=sh_cnt_top20_8_img", image_url: "http://shirt.woot.com/offers/sarcasm-4?ref=sh_cnt_top20_8_img")
+Shirt.create(name: "Go Sports", source_url: "http://shirt.woot.com/offers/go-sports?ref=sh_cnt_top20_3_img", image_url: "https://images-na.ssl-images-amazon.com/images/S/mediaservice.woot.com/343d427a-7d15-463b-a2bc-c01a54a3818d._SY441_CR15,0,558,441_.png")
+Shirt.create(name: "Real Mermaids", source_url: "http://shirt.woot.com/offers/real-mermaids-have-curves", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/21da654e-acae-4d86-8fd6-a42d8c65edea.png")
+Shirt.create(name: "The Cake is a Liar", source_url: "http://shirt.woot.com/offers/the-cake-is-a-liar?ref=cnt_ctlg_dgn_36", image_url: "https://d3gqasl9vmjfd8.cloudfront.net/a64fb82c-c6c6-470a-9101-7e404411d5d6.png")
+Shirt.create(name: "Fresh Cake", source_url: "https://shirt.woot.com/offers/fresh-cake?ref=cnt_ctlg_dgn_26",  image_url: "https://d3gqasl9vmjfd8.cloudfront.net/d887f63a-4b97-43b5-a7f5-ba490bcb4f34.png")
+Shirt.create(name: "Keyboard Cat", source_url: "http://shirt.woot.com/offers/keyboard-cat?ref=cnt_ctlg_dgn_2", image_url: "https://images-na.ssl-images-amazon.com/images/S/mediaservice.woot.com/fc161a5f-421d-4fb0-9767-def23e753c70._SX169_CR0,1,169,124_.png")
+Shirt.create(name: "Hibernating", source_url: "http://shirt.woot.com/offers/hibernating-4-life?ref=sh_cnt_wp_1_2", image_url: "https://media.giphy.com/media/edzfEQaW6sckU/giphy.gif")
+Shirt.create(name: "Family Breakfast" , source_url: "http://shirt.woot.com/offers/family-breakfast?ref=cnt_ctlg_dgn_6", image_url:"https://d3gqasl9vmjfd8.cloudfront.net/5be9e52b-ba6a-42e4-a0c6-eb1164588833.png")
+Shirt.create(name: "Andale, Andale!", source_url: "http://shirt.woot.com/offers/andale-andale?ref=sh_cnt_wp_3_1")
+Shirt.create(name: "Food", source_url: "http://shirt.woot.com/offers/food?ref=sh_cnt_wp_3_5")
+Shirt.create(name: "Trojan Dog", source_url: "http://shirt.woot.com/offers/trojan-dog")
+Shirt.create(name: "Andale, Andale!", source_url: "http://shirt.woot.com/offers/andale-andale?ref=sh_cnt_wp_3_1")
+Shirt.create(name: "Family Breakfast", source_url: "http://shirt.woot.com/offers/family-breakfast?ref=cnt_ctlg_dgn_1")
+Shirt.create(name: "SleepSack", source_url: "http://kids.woot.com/offers/halo-micro-fleece-sleepsacks-5-styles-1?ref=kd_cnt_gw_dly_wobtn" )
+puts "Done"
