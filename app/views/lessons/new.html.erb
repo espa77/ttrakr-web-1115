@@ -1,0 +1,17 @@
+<h1>Create a new lesson</h1>
+<%= form_for @lesson do |f| %>
+  <div>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+  <div>
+  <%= f.label :notes %>
+  <%= f.text_field :notes %>
+</div>
+
+  <div>
+  <%= f.collection_check_boxes :shirt_ids, Shirt.all, :id, :name %>
+</div>
+<%= f.submit %>
+<% end %>
