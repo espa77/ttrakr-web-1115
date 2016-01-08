@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  Session Message: <%= session[:message] %>
   <ul>
     <li><%= link_to "Go buy more shirts!!!", random_shirt_path %></li>
   </ul>

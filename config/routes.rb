@@ -1,16 +1,11 @@
 Rails.application.routes.draw do
-  get 'lessons/index'
-
-  get 'lessons/show'
-
-  get 'lessons/new'
-
-  get 'lessons/create'
+  get 'sessions/new'
 
   root "home#index"
   get "random_shirt", to: "random_shirt#random"
   resources :shirts, only: [:index, :show]
   resources :lessons, only: [:index, :show, :new, :create]
+  resources :sessions, only: [:new, :create]
 end
 
 =begin
