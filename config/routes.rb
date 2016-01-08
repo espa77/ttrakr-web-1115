@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'registrations/new'
+
   get 'sessions/new'
 
   root "home#index"
