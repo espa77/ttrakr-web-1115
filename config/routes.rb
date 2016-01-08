@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :shirts, only: [:index, :show]
   resources :lessons, only: [:index, :show, :new, :create]
   resources :sessions, only: [:new, :create]
+  delete 'sessions', to: "sessions#destroy"
+  resources :registrations, only: [:new, :create]
 end
 
 =begin

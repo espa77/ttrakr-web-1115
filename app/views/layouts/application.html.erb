@@ -7,7 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  Session Message: <%= session[:message] %>
+  <% if flash[:error] %>
+    <div>Error: <%= flash[:error] %></div>
+  <% end %>
+
+  <% if flash[:notice] %>
+    <div><%= flash[:notice] %></div>
+  <% end %>
+
+  <% if logged_in? %>
+    Current user is: <%= current_user.name  %>
+    <%= link_to "Log out", sessions_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_registration_path %> |
+    <%= link_to "Sign in", new_session_path %>
+  <% end %>
   <ul>
     <li><%= link_to "Go buy more shirts!!!", random_shirt_path %></li>
   </ul>
