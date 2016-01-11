@@ -7,24 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if flash[:error] %>
-    <div>Error: <%= flash[:error] %></div>
-  <% end %>
-
-  <% if flash[:notice] %>
-    <div><%= flash[:notice] %></div>
-  <% end %>
-
-  <% if logged_in? %>
-    Current user is: <%= current_user.name  %>
-    <%= link_to "Log out", sessions_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign up", new_registration_path %> |
-    <%= link_to "Sign in", new_session_path %>
-  <% end %>
   <ul>
     <li><%= link_to "Go buy more shirts!!!", random_shirt_path %></li>
   </ul>
+  <div>
+    <% if flash[:error] %>
+      <%= flash[:error] %>
+    <% end %>
+  </div>
+  <% if logged_in? %>
+    Welcome Back, <%= current_user.name %>
+    <%= link_to "Sign out", sign_out_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign In", sign_in_path %>
+    <%= link_to "Sign Up", sign_up_path %>
+  <% end %>
+  <div>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    <% end %>
+  </div>
+  <div>
+  </div>
 <%= yield %>
 
 </body>
