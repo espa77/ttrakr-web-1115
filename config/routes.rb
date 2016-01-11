@@ -1,15 +1,8 @@
 Rails.application.routes.draw do
-  get 'registrations/new'
-
-  get 'sessions/new'
-
   root "home#index"
   get "random_shirt", to: "random_shirt#random"
   resources :shirts, only: [:index, :show]
   resources :lessons, only: [:index, :show, :new, :create]
-  resources :sessions, only: [:new, :create]
-  delete 'sessions', to: "sessions#destroy"
-  resources :registrations, only: [:new, :create]
 end
 
 =begin
