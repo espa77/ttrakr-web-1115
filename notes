@@ -1,13 +1,21 @@
 *Create a Shirt Model
 * name, url, image_url
 * Create a ShirtsController
-*   index Action that shows all of the shirts
-* Create a shirts/index.html.erb template
+**   index Action that shows all of the shirts
+** Create a shirts/index.html.erb template
+*
+*/sessions/new => Login form
+*SessionsController#new
+*  views/sessions/new.html.erb
+*POST to /sessions
+*
+*/registrations/new => Signup form
+*POST to /registrations
 
-/sessions/new => Login form
-SessionsController#new
-  views/sessions/new.html.erb
-POST to /sessions
+* Navigation links /lessons /shirts
 
-/registrations/new => Signup form
-POST to /registrations
+* Lessons are attributed to the logged in user
+
+Lessons can be commented on by other users
+  post /lessons/7/comments
+New lesson form can create a new shirt

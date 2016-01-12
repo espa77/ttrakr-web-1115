@@ -7,10 +7,31 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  Session Message: <%= session[:message] %>
   <ul>
+    <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Go buy more shirts!!!", random_shirt_path %></li>
+    <li><%= link_to "See all lessons", lessons_path %></li>
+    <li><%= link_to "See all shirts", shirts_path %></li>
   </ul>
+  <div>
+    <% if flash[:error] %>
+      <%= flash[:error] %>
+    <% end %>
+  </div>
+  <% if logged_in? %>
+    Welcome Back, <%= current_user.name %>
+    <%= link_to "Sign out", sign_out_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign In", sign_in_path %>
+    <%= link_to "Sign Up", sign_up_path %>
+  <% end %>
+  <div>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    <% end %>
+  </div>
+  <div>
+  </div>
 <%= yield %>
 
 </body>
