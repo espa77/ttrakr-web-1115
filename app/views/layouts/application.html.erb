@@ -8,7 +8,10 @@
 </head>
 <body>
   <ul>
+    <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "Go buy more shirts!!!", random_shirt_path %></li>
+    <li><%= link_to "See all lessons", lessons_path %></li>
+    <li><%= link_to "See all shirts", shirts_path %></li>
   </ul>
   <div>
     <% if flash[:error] %>
