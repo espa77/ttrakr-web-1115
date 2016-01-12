@@ -1,7 +1,8 @@
 class SessionsController < ApplicationController
+  skip_before_action :authenticate!
   def new
   end
-def create
+  def create
     user = User.authenticate!(params[:username], params[:password])
     if user
       session[:user_id] = user.id
